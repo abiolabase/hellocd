@@ -35,7 +35,7 @@ jobs:
           at: /tmp
       - run:
           name: "print_hello_world_output"
-          command: "cat output.txt"
+          command: "cat /tmp/output.txt"
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
