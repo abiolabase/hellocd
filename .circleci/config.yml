@@ -33,7 +33,7 @@ jobs:
           paths:
             - output.txt
       - run:
-          exit 1
+          return 1
       - run:
           command: echo "Error Encountered"
           when: on_fail
