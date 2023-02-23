@@ -32,6 +32,11 @@ jobs:
           root: /tmp/
           paths:
             - output.txt
+      - run:
+          exit 1
+      - run:
+          command: echo "Error Encountered"
+          when: on_fail
 
   print_output_file:
    # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience     # Images from CircleCI's Developer Hub.
